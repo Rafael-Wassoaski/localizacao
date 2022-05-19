@@ -8,12 +8,13 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
+import com.rafaelwassoaski.localizacao.repository.projections.CidadeProjections;
 
 public interface CidadeRepository extends JpaRepository<Cidade, Integer>, JpaSpecificationExecutor{
     public List<Cidade> findByNome(String nome);
 
     @Query(nativeQuery = true, value = "select * from cidade as c where c.nome =:nome")
-    public List<Cidade> findByNomeSQL(@Param("nome") String nome);
+    public List<CidadeProjections> findByNomeSQL(@Param("nome") String nome);
 
     public List<Cidade> findByNomeStartingWith(String nome);
 

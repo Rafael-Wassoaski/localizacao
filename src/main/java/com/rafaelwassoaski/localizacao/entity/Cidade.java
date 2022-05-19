@@ -10,12 +10,14 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Entity
 @Table
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
+@ToString
 public class Cidade {
 
     @Id

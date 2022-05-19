@@ -26,7 +26,7 @@ public class LocalizacaoApplication implements CommandLineRunner {
 
 		cidadeService.getCidadesBySpecs(cidade);
 		cidadeService.getCidades();
-		cidadeService.nullableTest(null);
+		// cidadeService.nullableTest(null);
 	}
 
 	public static void main(String[] args) {

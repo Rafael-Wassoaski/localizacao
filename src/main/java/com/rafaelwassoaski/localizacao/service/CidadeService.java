@@ -45,7 +45,7 @@ public class CidadeService {
         cidadeRepository.findByHabitantesLessThanAndNomeLike(700001L, "Can%")
                 .forEach(System.out::println);
 
-        cidadeRepository.findByNomeSQL("Canoinhas").forEach(System.out::println);
+        cidadeRepository.findByNomeSQL("Canoinhas").stream().map(cidade -> new Cidade(cidade.getId(), cidade.getNome(), null)).forEach(System.out::println);
     }
 
     public List<Cidade> filtroDinamico(Cidade cidade) {
