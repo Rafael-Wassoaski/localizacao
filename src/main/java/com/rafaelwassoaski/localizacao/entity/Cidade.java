@@ -8,13 +8,14 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Entity
 @Table
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
 public class Cidade {
 
     @Id
@@ -25,5 +26,5 @@ public class Cidade {
     private String nome;
 
     @Column
-    private Long habitantes; 
+    private Long habitantes;
 }
