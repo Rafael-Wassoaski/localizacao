@@ -8,13 +8,14 @@
 		<version>2.6.7</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 	<groupId>com.rafaelwassoaski</groupId>
 	<artifactId>localizacao</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>localizacao</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
